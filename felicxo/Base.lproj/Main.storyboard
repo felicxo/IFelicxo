@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5W9-3D-I9T">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="wWy-Kd-HF2">
+            <objects>
+                <tableViewController id="Tp9-DA-qR0" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AbS-bT-Kle" customClass="AuthorsViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Tp9-DA-qR0" id="Rel-pu-HJK"/>
+                            <outlet property="delegate" destination="Tp9-DA-qR0" id="XcZ-ri-Q5Z"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="home" id="Bu4-b5-Rnw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="way-If-nth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="240"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WHh-vD-eFd">
+            <objects>
+                <viewController id="avI-0p-QRB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q9J-nQ-WcM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lsn-8O-J3F"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="trophy" selectedImage="trophy" id="H5L-08-wQf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DcJ-oJ-TSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="238"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="PXp-yC-TC1">
+            <objects>
+                <tableViewController id="BN5-hV-Crx" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zes-DM-17L" customClass="BooksViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="BN5-hV-Crx" id="BhY-hM-bYa"/>
+                            <outlet property="delegate" destination="BN5-hV-Crx" id="qH9-fr-fof"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="comment-dots" selectedImage="comment-dots" id="aB2-Ud-vrn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdm-5T-shV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="-600"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iQx-EY-RAO">
+            <objects>
+                <viewController id="xbb-O7-Whu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cnk-KY-PQt" customClass="BookCoverViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AXw-Np-zMd">
+                                <rect key="frame" x="67" y="66" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hwb-sx-dRW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="album" selectedImage="album" id="89d-7x-yC0"/>
+                    <connections>
+                        <outlet property="view" destination="AXw-Np-zMd" id="MlO-nK-gam"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vg-88-Rjv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1326" y="-440"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aRq-9P-ahu">
+            <objects>
+                <tabBarController id="5W9-3D-I9T" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hwj-DA-27i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Tp9-DA-qR0" kind="relationship" relationship="viewControllers" id="0m8-o5-4Gt"/>
+                        <segue destination="xbb-O7-Whu" kind="relationship" relationship="viewControllers" id="bTp-jf-ILO"/>
+                        <segue destination="BN5-hV-Crx" kind="relationship" relationship="viewControllers" id="Mih-PU-5DM"/>
+                        <segue destination="avI-0p-QRB" kind="relationship" relationship="viewControllers" id="bdB-91-hdY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCG-LY-aWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-625" y="-192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="album" width="33" height="25"/>
+        <image name="comment-dots" width="29" height="25"/>
+        <image name="home" width="33" height="25"/>
+        <image name="trophy" width="29" height="25"/>
+    </resources>
+</document>
