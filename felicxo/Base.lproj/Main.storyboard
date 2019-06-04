@@ -152,10 +152,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lb-nk-Vj0">
                                         <rect key="frame" x="0.0" y="50.5" width="229.5" height="30"/>
                                         <state key="normal" title="Dette"/>
+                                        <connections>
+                                            <segue destination="HSs-0C-olD" kind="show" id="ShL-z5-aRV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5W-Iz-hnO">
                                         <rect key="frame" x="0.0" y="80.5" width="229.5" height="30"/>
                                         <state key="normal" title="Citation"/>
+                                        <connections>
+                                            <segue destination="2U2-2L-8o2" kind="show" id="T4Z-ff-Og6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -198,7 +204,7 @@
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAa-hC-EuE">
                                         <rect key="frame" x="0.0" y="255.5" width="295" height="228.5"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Envoyer"/>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -220,6 +226,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oo3-ZM-miP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3400.8000000000002" y="913.49325337331345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cPU-Fj-yBc">
+            <objects>
+                <viewController id="HSs-0C-olD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTE-kb-PIr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nTr-cE-L7x">
+                                <rect key="frame" x="27" y="85" width="320" height="296.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="963-5m-t1a">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="te doit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLC-6o-vtX">
+                                        <rect key="frame" x="0.0" y="216" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qle-NO-ORy">
+                                        <rect key="frame" x="0.0" y="236.5" width="320" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mL6-Qr-LET">
+                                        <rect key="frame" x="0.0" y="266.5" width="320" height="30"/>
+                                        <state key="normal" title="Envoyer"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yr3-Ar-JeZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTr-cf-1zm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3414" y="1620"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aDD-sq-IJg">
+            <objects>
+                <viewController id="2U2-2L-8o2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r1s-O9-V8e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DCE-FW-xbg">
+                                <rect key="frame" x="40" y="114" width="295" height="464"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWu-bx-iD9">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="285.5"/>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a dit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yug-IP-rGp">
+                                        <rect key="frame" x="0.0" y="285.5" width="295" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zuh-eb-bie">
+                                        <rect key="frame" x="0.0" y="306" width="295" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3Z-Qs-JR3">
+                                        <rect key="frame" x="0.0" y="434" width="295" height="30"/>
+                                        <state key="normal" title="Envoyer"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DCE-FW-xbg" firstAttribute="leading" secondItem="87B-C0-f93" secondAttribute="leading" constant="40" id="HXN-sX-0cD"/>
+                            <constraint firstItem="87B-C0-f93" firstAttribute="trailing" secondItem="DCE-FW-xbg" secondAttribute="trailing" constant="40" id="M0A-zv-mfY"/>
+                            <constraint firstItem="87B-C0-f93" firstAttribute="bottom" secondItem="DCE-FW-xbg" secondAttribute="bottom" constant="40" id="kvo-T1-Gmd"/>
+                            <constraint firstItem="DCE-FW-xbg" firstAttribute="top" secondItem="87B-C0-f93" secondAttribute="top" constant="50" id="nEB-6P-rUl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="87B-C0-f93"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYT-nM-DYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3401" y="2353"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aRq-9P-ahu">
